@@ -1,0 +1,10 @@
+{
+  "description": "Creates polished, professional websites tailored to customer details, helping businesses present their brand and services with style.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
