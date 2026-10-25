@@ -17,6 +17,8 @@ svg { width:20px; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linec
 .nav>a:not(.nav-cta) { opacity:.8; transition:.2s; }
 .nav>a:hover { opacity:1; }
 .nav-cta,.button { display:inline-flex; align-items:center; gap:22px; padding:15px 20px; border:1px solid rgba(255,255,255,.6); text-transform:uppercase; letter-spacing:.12em; font-size:11px; }
+.nav-whatsapp { border-color:rgba(145,213,166,.8); color:#c0ebce; }
+.nav-whatsapp:hover { background:rgba(145,213,166,.14); }
 .nav-cta svg,.button svg,.text-link svg { transition:transform .2s; }
 .nav-cta:hover svg,.button:hover svg,.text-link:hover svg { transform:translateX(4px); }
 .menu { display:none; color:white; background:none; border:0; }
@@ -73,7 +75,15 @@ h2 { font-size:clamp(42px,5.5vw,76px); }
 .contact-copy { padding:10vw 8vw; display:flex; flex-direction:column; justify-content:center; }
 .contact-copy h2 { font-size:clamp(42px,4.8vw,70px); }
 .contact-copy>p:not(.eyebrow) { line-height:1.8; color:rgba(255,255,255,.68); max-width:540px; margin:30px 0; }
-.button.gold { background:var(--gold); color:#14231d; border:0; align-self:flex-start; }
+.contact-actions { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+.contact-action { min-height:64px; padding:13px 16px; display:flex; flex-direction:column; justify-content:center; gap:5px; border:1px solid rgba(255,255,255,.3); transition:background .2s,border-color .2s; }
+.contact-action:hover { background:rgba(255,255,255,.1); border-color:rgba(255,255,255,.7); }
+.contact-action span { font-size:11px; text-transform:uppercase; letter-spacing:.14em; }
+.contact-action small { color:rgba(255,255,255,.62); font-size:11px; overflow-wrap:anywhere; }
+.contact-action.whatsapp { border-color:rgba(102,196,131,.65); }
+.contact-action.whatsapp span { color:#91d5a6; }
+.contact-action.email { grid-column:1/-1; border-color:rgba(197,163,106,.7); }
+.contact-action.email span { color:#dfc18e; }
 .contact-meta { display:flex; flex-wrap:wrap; gap:25px; margin-top:55px; padding-top:25px; border-top:1px solid rgba(255,255,255,.2); font-size:9px; letter-spacing:.18em; color:rgba(255,255,255,.55); }
 footer { min-height:140px; padding:35px 5vw; display:flex; align-items:center; justify-content:space-between; gap:30px; background:#0d1914; color:white; font-size:11px; letter-spacing:.08em; }
 footer p { opacity:.55; }.footer-brand { color:white; }

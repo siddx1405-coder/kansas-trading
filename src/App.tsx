@@ -38,7 +38,8 @@ export default function App() {
           <a href="#services" onClick={close}>Services</a>
           <a href="#projects" onClick={close}>Our work</a>
           <a href="#about" onClick={close}>About</a>
-          <a className="nav-cta" href="#contact" onClick={close}>Get a free quote <Arrow /></a>
+          <a className="nav-cta nav-whatsapp" href="https://wa.me/97451500327" target="_blank" rel="noreferrer">WhatsApp <Arrow /></a>
+          <a className="nav-cta" href="#contact" onClick={close}>Contact <Arrow /></a>
         </nav>
         <button className="menu" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu"><MenuIcon open={menuOpen} /></button>
       </header>
@@ -111,7 +112,23 @@ export default function App() {
           <p className="eyebrow">READY TO TRANSFORM YOUR SPACE?</p>
           <h2>Let’s make something<br /><em>beautiful together.</em></h2>
           <p>Share your measurements, inspiration or requirements with the Kansas Trading team for a tailored recommendation and quote.</p>
-          <a className="button gold" href="#top">Start your project <Arrow /></a>
+          <div className="contact-actions" aria-label="Contact Kansas Trading">
+            <a className="contact-action whatsapp" href="https://wa.me/97451500327" target="_blank" rel="noreferrer">
+              <span>WhatsApp</span><small>+974 5150 0327</small>
+            </a>
+            <a className="contact-action whatsapp" href="https://wa.me/97455509210" target="_blank" rel="noreferrer">
+              <span>WhatsApp</span><small>+974 5550 9210</small>
+            </a>
+            <a className="contact-action" href="tel:+97451500327">
+              <span>Call</span><small>+974 5150 0327</small>
+            </a>
+            <a className="contact-action" href="tel:+97455509210">
+              <span>Call</span><small>+974 5550 9210</small>
+            </a>
+            <a className="contact-action email" href="mailto:islamrafique697@gmail.com">
+              <span>Email</span><small>islamrafique697@gmail.com</small>
+            </a>
+          </div>
           <div className="contact-meta"><span>CURTAINS</span><span>FURNITURE</span><span>CARPETS</span><span>FLOORING</span></div>
         </div>
       </section>
