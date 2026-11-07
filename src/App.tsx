@@ -11,7 +11,7 @@ const services = [
 
 const projects = [
   { src: `${base}6d31cfae-273e-4e3b-a1e1-95fad1082b4b.png`, title: 'Full-height drapery', tag: 'Curtains' },
-  { src: `${base}516d56b1-8fbe-460e-847e-64fa16e4bf75.png`, title: 'Garden transformation', tag: 'Grass carpet' },
+  { src: `${base}516d56b1-8fbe-460e-847e-64fa16e4bf75.png`, title: 'Garden transformation', tag: 'Cotton' },
   { src: `${base}3b75e74b-91da-4b7e-9d16-36131adfd090.png`, title: 'Herringbone finish', tag: 'UPVC flooring' },
   { src: `${base}79254405-a9bf-4f78-8627-5b99c5261ae0.png`, title: 'Soft layered sheers', tag: 'Curtains' },
   { src: `${base}fe370795-8305-43aa-9a06-c80cfb495d51.png`, title: 'Modern roller blinds', tag: 'Blinds' },
@@ -29,6 +29,7 @@ export default function App() {
 
   return (
     <main>
+      <div className="top-address">Shop no 299 C. R. 108177</div>
       <header className="header">
         <a className="brand" href="#top" onClick={close}>
           <span className="brand-mark">K</span>
@@ -137,6 +138,11 @@ export default function App() {
         <a className="brand footer-brand" href="#top"><span className="brand-mark">K</span><span><b>KANSAS</b><small>TRADING & FURNITURE</small></span></a>
         <p>Thoughtful interiors. Professional installation.</p>
         <p>© {new Date().getFullYear()} Kansas Trading</p>
+        <div className="maker-credit">
+          <span>Made by @Xenosys Qatar</span>
+          <a href="https://www.xenosysweb.com/" target="_blank" rel="noreferrer">https://www.xenosysweb.com/</a>
+          <a href="tel:+97470643918">+974 70643918</a>
+        </div>
       </footer>
     </main>
   )
